@@ -1,0 +1,105 @@
+/*faire en sorte que l'image suit quand on bouge l'écran et de pouvoir cliquer dessus pour revenir au menu principal*/
+body {
+	background-color: #9170CB ;
+	background-image: url("devanture.JPG");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-property: background-color; /* Active la transition sur background-color */
+    transition-duration: 5s; /* La transition dure 1s */ 
+}
+body:hover
+{
+	background-color: #D6749D ;
+}
+
+h1 {
+	text-align: center;
+	color: blue ;
+	font : 150% impact, futura, sans-serif;
+    text-transform : uppercase;
+    letter-spacing : 0.3em;
+    width: 200px; 
+	padding-top: 15px;
+	padding-bottom: 15px; 
+	border: 3px solid #FF006E;
+	background: #FF00DC;
+	border-radius: 10px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    font-size: 40px;
+}
+h2 {
+	color: blue;
+	text-align: center;
+	font-family: fantasy;
+	font-size: 35px;
+}
+
+h2:hover
+{
+	color: purple;
+}
+#banniere_image {
+
+height: 20%; /* La bannière fera 20% de la hauteur de la page... */
+
+width: 100%; /* et 100% de la largeur. */
+
+background-image : url(/*url de votre image de fond*/);
+background-position: top;
+background-repeat: repeat /* le fond se répète dans toute les direction. (ligne facultative car option par défaut, mais comme ça coute rien de la mettre...) */
+
+}
+strong {
+	color: purple ;
+	text-align: center ;
+}
+
+strong:hover
+{
+	color: blue;
+}
+nav, a {
+	text-align: center ;
+	color: black ;
+	font-size: 25px;
+	font-family: emoji;
+
+
+}
+nav:hover
+{
+	color : #B92764;
+}
+a:hover{
+	color : red;
+}
+#bloc_page {
+	position: center;
+}
+img {
+    width: 150px; /* on affiche l'image au carré */
+    height: 150px;
+    border-radius: 50%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+}
+p {
+	color: #B92764;
+	font-size: 20px;
+	font-family: fantasy;
+	text-align: center;
+}
+
+p:hover
+{
+	color: blue;
+	animation-duration: 3s;
+  	animation-name: slidein;
+  	animation-iteration-count: infinite;
+}	
+h4 {
+	text-align: right;
+}
